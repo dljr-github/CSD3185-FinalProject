@@ -1,0 +1,388 @@
+Classification Reports:
+The classification report shows the following metrics for each class:
+- Precision: The ability of the classifier not to label a negative sample as positive.
+- Recall: The ability of the classifier to find all the positive samples.
+- F1-score: A harmonic mean of precision and recall, providing a single metric for both.
+- Support: The number of samples per class.
+
+Note: Accuracy is not included in the classification report by default.
+Accuracy is the ratio of correctly classified samples to the total number of samples.
+
+The report also includes two types of averages:
+- Weighted Average (weighted avg): Calculates the average metric by weighting the metric of each class by its support (number of samples).
+  This gives more importance to the metrics of classes with a larger number of samples.
+- Macro Average (macro avg): Calculates the arithmetic mean of the metric values across all classes, treating each class equally.
+  This does not consider the number of samples per class.
+
+
+SVM Classification Report (Best Hyperparameters: {'C': 10, 'kernel': 'rbf'}):
+Class: standing
+Precision: 0.9937 (Out of 788.0 samples, how many were correctly classified as positive)
+Recall: 0.9962 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9949 (Harmonic mean of precision and recall)
+Support: 788.0
+
+Class: sitting
+Precision: 1.0000 (Out of 918.0 samples, how many were correctly classified as positive)
+Recall: 1.0000 (Out of the true positive samples, how many were correctly classified)
+F1-score: 1.0000 (Harmonic mean of precision and recall)
+Support: 918.0
+
+Class: t-posing
+Precision: 0.9978 (Out of 906.0 samples, how many were correctly classified as positive)
+Recall: 0.9989 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9983 (Harmonic mean of precision and recall)
+Support: 906.0
+
+Class: crane pose
+Precision: 0.9977 (Out of 876.0 samples, how many were correctly classified as positive)
+Recall: 0.9989 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9983 (Harmonic mean of precision and recall)
+Support: 876.0
+
+Class: running
+Precision: 0.9898 (Out of 878.0 samples, how many were correctly classified as positive)
+Recall: 0.9966 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9932 (Harmonic mean of precision and recall)
+Support: 878.0
+
+Class: warrior yoga pose
+Precision: 0.9989 (Out of 909.0 samples, how many were correctly classified as positive)
+Recall: 0.9879 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9934 (Harmonic mean of precision and recall)
+Support: 909.0
+
+Class: tree yoga pose
+Precision: 1.0000 (Out of 892.0 samples, how many were correctly classified as positive)
+Recall: 1.0000 (Out of the true positive samples, how many were correctly classified)
+F1-score: 1.0000 (Harmonic mean of precision and recall)
+Support: 892.0
+
+Class: goddess yoga pose
+Precision: 0.9990 (Out of 955.0 samples, how many were correctly classified as positive)
+Recall: 0.9990 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9990 (Harmonic mean of precision and recall)
+Support: 955.0
+
+Class: macro avg
+Precision: 0.9971 (Out of 7122.0 samples, how many were correctly classified as positive)
+Recall: 0.9972 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9971 (Harmonic mean of precision and recall)
+Support: 7122.0
+
+Class: weighted avg
+Precision: 0.9972 (Out of 7122.0 samples, how many were correctly classified as positive)
+Recall: 0.9972 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9972 (Harmonic mean of precision and recall)
+Support: 7122.0
+
+
+Random Forest Classification Report (Best Hyperparameters: {'max_depth': None, 'n_estimators': 200}):
+Class: standing
+Precision: 0.9962 (Out of 788.0 samples, how many were correctly classified as positive)
+Recall: 0.9975 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9968 (Harmonic mean of precision and recall)
+Support: 788.0
+
+Class: sitting
+Precision: 0.9989 (Out of 918.0 samples, how many were correctly classified as positive)
+Recall: 1.0000 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9995 (Harmonic mean of precision and recall)
+Support: 918.0
+
+Class: t-posing
+Precision: 0.9989 (Out of 906.0 samples, how many were correctly classified as positive)
+Recall: 0.9989 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9989 (Harmonic mean of precision and recall)
+Support: 906.0
+
+Class: crane pose
+Precision: 1.0000 (Out of 876.0 samples, how many were correctly classified as positive)
+Recall: 0.9977 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9989 (Harmonic mean of precision and recall)
+Support: 876.0
+
+Class: running
+Precision: 0.9854 (Out of 878.0 samples, how many were correctly classified as positive)
+Recall: 1.0000 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9927 (Harmonic mean of precision and recall)
+Support: 878.0
+
+Class: warrior yoga pose
+Precision: 0.9978 (Out of 909.0 samples, how many were correctly classified as positive)
+Recall: 0.9879 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9928 (Harmonic mean of precision and recall)
+Support: 909.0
+
+Class: tree yoga pose
+Precision: 1.0000 (Out of 892.0 samples, how many were correctly classified as positive)
+Recall: 1.0000 (Out of the true positive samples, how many were correctly classified)
+F1-score: 1.0000 (Harmonic mean of precision and recall)
+Support: 892.0
+
+Class: goddess yoga pose
+Precision: 1.0000 (Out of 955.0 samples, how many were correctly classified as positive)
+Recall: 0.9958 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9979 (Harmonic mean of precision and recall)
+Support: 955.0
+
+Class: macro avg
+Precision: 0.9971 (Out of 7122.0 samples, how many were correctly classified as positive)
+Recall: 0.9972 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9972 (Harmonic mean of precision and recall)
+Support: 7122.0
+
+Class: weighted avg
+Precision: 0.9972 (Out of 7122.0 samples, how many were correctly classified as positive)
+Recall: 0.9972 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9972 (Harmonic mean of precision and recall)
+Support: 7122.0
+
+
+Logistic Regression Classification Report (Best Hyperparameters: {'C': 10, 'max_iter': 1000, 'penalty': 'l2'}):
+Class: standing
+Precision: 0.9537 (Out of 788.0 samples, how many were correctly classified as positive)
+Recall: 0.9670 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9603 (Harmonic mean of precision and recall)
+Support: 788.0
+
+Class: sitting
+Precision: 0.9978 (Out of 918.0 samples, how many were correctly classified as positive)
+Recall: 1.0000 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9989 (Harmonic mean of precision and recall)
+Support: 918.0
+
+Class: t-posing
+Precision: 0.9680 (Out of 906.0 samples, how many were correctly classified as positive)
+Recall: 0.9669 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9674 (Harmonic mean of precision and recall)
+Support: 906.0
+
+Class: crane pose
+Precision: 0.9667 (Out of 876.0 samples, how many were correctly classified as positive)
+Recall: 0.9600 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9633 (Harmonic mean of precision and recall)
+Support: 876.0
+
+Class: running
+Precision: 0.9191 (Out of 878.0 samples, how many were correctly classified as positive)
+Recall: 0.9191 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9191 (Harmonic mean of precision and recall)
+Support: 878.0
+
+Class: warrior yoga pose
+Precision: 0.9638 (Out of 909.0 samples, how many were correctly classified as positive)
+Recall: 0.9659 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9648 (Harmonic mean of precision and recall)
+Support: 909.0
+
+Class: tree yoga pose
+Precision: 0.9944 (Out of 892.0 samples, how many were correctly classified as positive)
+Recall: 0.9978 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9961 (Harmonic mean of precision and recall)
+Support: 892.0
+
+Class: goddess yoga pose
+Precision: 0.9862 (Out of 955.0 samples, how many were correctly classified as positive)
+Recall: 0.9749 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9805 (Harmonic mean of precision and recall)
+Support: 955.0
+
+Class: macro avg
+Precision: 0.9687 (Out of 7122.0 samples, how many were correctly classified as positive)
+Recall: 0.9689 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9688 (Harmonic mean of precision and recall)
+Support: 7122.0
+
+Class: weighted avg
+Precision: 0.9693 (Out of 7122.0 samples, how many were correctly classified as positive)
+Recall: 0.9693 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9693 (Harmonic mean of precision and recall)
+Support: 7122.0
+
+
+K-Nearest Neighbors Classification Report (Best Hyperparameters: {'n_neighbors': 3, 'weights': 'distance'}):
+Class: standing
+Precision: 0.9788 (Out of 788.0 samples, how many were correctly classified as positive)
+Recall: 0.9975 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9881 (Harmonic mean of precision and recall)
+Support: 788.0
+
+Class: sitting
+Precision: 1.0000 (Out of 918.0 samples, how many were correctly classified as positive)
+Recall: 1.0000 (Out of the true positive samples, how many were correctly classified)
+F1-score: 1.0000 (Harmonic mean of precision and recall)
+Support: 918.0
+
+Class: t-posing
+Precision: 0.9989 (Out of 906.0 samples, how many were correctly classified as positive)
+Recall: 0.9989 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9989 (Harmonic mean of precision and recall)
+Support: 906.0
+
+Class: crane pose
+Precision: 0.9977 (Out of 876.0 samples, how many were correctly classified as positive)
+Recall: 0.9977 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9977 (Harmonic mean of precision and recall)
+Support: 876.0
+
+Class: running
+Precision: 0.9954 (Out of 878.0 samples, how many were correctly classified as positive)
+Recall: 0.9932 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9943 (Harmonic mean of precision and recall)
+Support: 878.0
+
+Class: warrior yoga pose
+Precision: 0.9967 (Out of 909.0 samples, how many were correctly classified as positive)
+Recall: 0.9912 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9939 (Harmonic mean of precision and recall)
+Support: 909.0
+
+Class: tree yoga pose
+Precision: 0.9989 (Out of 892.0 samples, how many were correctly classified as positive)
+Recall: 0.9989 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9989 (Harmonic mean of precision and recall)
+Support: 892.0
+
+Class: goddess yoga pose
+Precision: 1.0000 (Out of 955.0 samples, how many were correctly classified as positive)
+Recall: 0.9916 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9958 (Harmonic mean of precision and recall)
+Support: 955.0
+
+Class: macro avg
+Precision: 0.9958 (Out of 7122.0 samples, how many were correctly classified as positive)
+Recall: 0.9961 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9959 (Harmonic mean of precision and recall)
+Support: 7122.0
+
+Class: weighted avg
+Precision: 0.9961 (Out of 7122.0 samples, how many were correctly classified as positive)
+Recall: 0.9961 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9961 (Harmonic mean of precision and recall)
+Support: 7122.0
+
+
+Gaussian Naive Bayes Classification Report:
+Class: standing
+Precision: 0.9493 (Out of 788.0 samples, how many were correctly classified as positive)
+Recall: 0.6891 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.7985 (Harmonic mean of precision and recall)
+Support: 788.0
+
+Class: sitting
+Precision: 0.8915 (Out of 918.0 samples, how many were correctly classified as positive)
+Recall: 0.9760 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9319 (Harmonic mean of precision and recall)
+Support: 918.0
+
+Class: t-posing
+Precision: 0.7185 (Out of 906.0 samples, how many were correctly classified as positive)
+Recall: 0.7605 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.7389 (Harmonic mean of precision and recall)
+Support: 906.0
+
+Class: crane pose
+Precision: 0.7960 (Out of 876.0 samples, how many were correctly classified as positive)
+Recall: 0.7751 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.7854 (Harmonic mean of precision and recall)
+Support: 876.0
+
+Class: running
+Precision: 0.5972 (Out of 878.0 samples, how many were correctly classified as positive)
+Recall: 0.6822 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.6369 (Harmonic mean of precision and recall)
+Support: 878.0
+
+Class: warrior yoga pose
+Precision: 0.6627 (Out of 909.0 samples, how many were correctly classified as positive)
+Recall: 0.6810 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.6717 (Harmonic mean of precision and recall)
+Support: 909.0
+
+Class: tree yoga pose
+Precision: 0.9173 (Out of 892.0 samples, how many were correctly classified as positive)
+Recall: 0.9204 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9189 (Harmonic mean of precision and recall)
+Support: 892.0
+
+Class: goddess yoga pose
+Precision: 0.8923 (Out of 955.0 samples, how many were correctly classified as positive)
+Recall: 0.8419 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.8664 (Harmonic mean of precision and recall)
+Support: 955.0
+
+Class: macro avg
+Precision: 0.8031 (Out of 7122.0 samples, how many were correctly classified as positive)
+Recall: 0.7908 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.7936 (Harmonic mean of precision and recall)
+Support: 7122.0
+
+Class: weighted avg
+Precision: 0.8020 (Out of 7122.0 samples, how many were correctly classified as positive)
+Recall: 0.7933 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.7946 (Harmonic mean of precision and recall)
+Support: 7122.0
+
+
+Decision Tree Classification Report (Best Hyperparameters: {'max_depth': None, 'min_samples_split': 2}):
+Class: standing
+Precision: 0.9698 (Out of 788.0 samples, how many were correctly classified as positive)
+Recall: 0.9772 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9735 (Harmonic mean of precision and recall)
+Support: 788.0
+
+Class: sitting
+Precision: 0.9978 (Out of 918.0 samples, how many were correctly classified as positive)
+Recall: 0.9956 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9967 (Harmonic mean of precision and recall)
+Support: 918.0
+
+Class: t-posing
+Precision: 0.9890 (Out of 906.0 samples, how many were correctly classified as positive)
+Recall: 0.9879 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9884 (Harmonic mean of precision and recall)
+Support: 906.0
+
+Class: crane pose
+Precision: 0.9817 (Out of 876.0 samples, how many were correctly classified as positive)
+Recall: 0.9817 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9817 (Harmonic mean of precision and recall)
+Support: 876.0
+
+Class: running
+Precision: 0.9591 (Out of 878.0 samples, how many were correctly classified as positive)
+Recall: 0.9624 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9608 (Harmonic mean of precision and recall)
+Support: 878.0
+
+Class: warrior yoga pose
+Precision: 0.9878 (Out of 909.0 samples, how many were correctly classified as positive)
+Recall: 0.9780 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9829 (Harmonic mean of precision and recall)
+Support: 909.0
+
+Class: tree yoga pose
+Precision: 0.9955 (Out of 892.0 samples, how many were correctly classified as positive)
+Recall: 1.0000 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9978 (Harmonic mean of precision and recall)
+Support: 892.0
+
+Class: goddess yoga pose
+Precision: 0.9853 (Out of 955.0 samples, how many were correctly classified as positive)
+Recall: 0.9843 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9848 (Harmonic mean of precision and recall)
+Support: 955.0
+
+Class: macro avg
+Precision: 0.9833 (Out of 7122.0 samples, how many were correctly classified as positive)
+Recall: 0.9834 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9833 (Harmonic mean of precision and recall)
+Support: 7122.0
+
+Class: weighted avg
+Precision: 0.9836 (Out of 7122.0 samples, how many were correctly classified as positive)
+Recall: 0.9836 (Out of the true positive samples, how many were correctly classified)
+F1-score: 0.9836 (Harmonic mean of precision and recall)
+Support: 7122.0
+
